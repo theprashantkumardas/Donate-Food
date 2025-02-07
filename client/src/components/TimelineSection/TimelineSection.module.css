@@ -1,0 +1,118 @@
+.timelineSection {
+    padding: 100px 0;
+    text-align:center;
+  }
+  
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #777;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 1.2;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 50px;
+  }
+  
+  .timeline {
+    position: relative;
+    padding-left: 30px; /* Space for the timeline line */
+    
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 5px; /* Position of the timeline line */
+    width: 2px; /* Width of the timeline line */
+    background-color: #ddd; /* Color of the timeline line */
+  }
+  
+  .timelineItem {
+    margin-bottom: 40px;
+  }
+  
+  .timelineContent {
+    padding-left: 40px; /* Space between the line and the content */
+    position: relative;
+  }
+  
+  .timelineContent::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -45px; /* Position of the circle */
+    width: 12px; /* Size of the circle */
+    height: 12px; /* Size of the circle */
+    border-radius: 50%;
+    background-color: #333; /* Color of the circle */
+    border: 3px solid #ddd;
+  }
+  
+  .timelineDate {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #777;
+    margin-bottom: 5px;
+  }
+  
+  .timelineTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .timelineDescription {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .timelineButtons {
+    display: flex;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .buttonContainer {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .timeline {
+      padding-left: 15px; /* Reduce space on smaller screens */
+    }
+  
+    .timeline::before {
+      left: 2px; /* Adjust the position for smaller screens */
+    }
+  
+    .timelineContent {
+      padding-left: 25px; /* Reduce space on smaller screens */
+    }
+  
+    .timelineContent::before {
+      left: -30px; /* Adjust the position for smaller screens */
+    }
+  }

@@ -1,0 +1,120 @@
+.signInFormContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+  }
+  
+  .wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    background-color: #ffffff;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .signInTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .signInDescription {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 30px;
+  }
+  
+  .signInForm {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .inputField {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    font-size: 1rem;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  
+  .loginButton {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    cursor: pointer;
+    border-radius: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .loginButton:hover {
+    background-color: #333;
+  }
+  
+  .divider {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 30px 0;
+  }
+  
+  .socialLogin {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .socialButton {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    background-color: transparent;
+    color: #333;
+    border-radius: 0;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .socialIcon {
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  .footerLinks {
+    margin-top: 30px;
+  }
+  
+  .footerLink,
+  .signUpLink {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .wrapper {
+      margin-top: -120px;
+      padding: 20px;
+      border: none;
+      max-width: 100%;
+    }
+  
+    .signInTitle {
+      font-size: 1.7rem;
+    }
+  
+    .inputField,
+    .loginButton {
+      font-size: 0.9rem;
+    }
+  }

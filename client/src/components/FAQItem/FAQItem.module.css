@@ -1,0 +1,28 @@
+.faqItem {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    cursor: pointer;
+  }
+  
+  .questionContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .question {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .toggleIcon {
+    font-size: 24px;
+    color: #777;
+  }
+  
+  .answer {
+    font-size: 16px;
+    margin-top: 10px;
+    padding-left: 20px;
+  }

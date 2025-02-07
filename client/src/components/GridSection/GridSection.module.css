@@ -1,0 +1,112 @@
+.gridSection {
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #777;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 1.2;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 50px;
+  }
+  
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .gridItem:nth-child(1) {  /* First item take 2 rows*/
+    grid-row: 1 / span 1;
+    border: 1px solid #ddd;
+  }
+  /* .gridItem:nth-child(1) {  
+    grid-row: 1 / span 2;
+    border: 1px solid #ddd;
+  } */
+  
+  .gridItem {  /* Other item*/
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .imageContainer {
+    width: 100%;
+    height: 250px; /* fixed height container for image in first item */
+    background-color: #eee; /* Placeholder color */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gridImage {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit:fill; /* Maintain aspect ratio */
+  }
+  
+  .itemTagline {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #777;
+    margin-bottom: 5px;
+  }
+  
+  .itemHeading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .itemDescription {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+  
+  /* Make all to same style*/
+    .gridContainer {
+      grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+  
+    .gridItem:nth-child(1) { /*Make all same */
+      grid-row: auto; /* Make it default */
+    }
+  }

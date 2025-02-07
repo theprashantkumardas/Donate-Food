@@ -1,0 +1,27 @@
+.button {
+    padding: 12px 30px; /* Slightly larger padding */
+    border: 2px solid #fff; /* White border */
+    border-radius: 0; /* No rounded corners */
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .primaryButton {
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    border: black solid 1px;
+  }
+  
+  .secondaryButton {
+    background-color: #000000; /* Transparent background */
+    color: #ffffff; /* White text */
+    border: white solid 1px;
+  }
+  
+  .button:hover {
+    background-color: #333; /* Darker background on hover */
+    color: #fff;
+    border-color: #333;
+  }

@@ -1,0 +1,29 @@
+.faqSection {
+    padding: 60px 0;
+    text-align:start;
+  }
+  
+  .wrapper {
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 0 20px; /* Add padding on the sides */
+  }
+  
+  .sectionTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 1.2;
+  }
+  
+  .sectionDescription {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin-bottom: 60px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .faqItems {
+    text-align: left;
+  }

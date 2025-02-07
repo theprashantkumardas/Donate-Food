@@ -1,0 +1,87 @@
+.infoSection {
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #777;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #000000;
+    margin-bottom: 50px;
+  }
+  
+  .itemsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute items evenly */
+    margin-bottom: 50px;
+  }
+  
+  .item {
+    width: calc(33.33% - 20px); /* Three items in a row, minus spacing */
+    margin-bottom: 40px;
+    text-align: left;
+  }
+  .subHeading{
+    display: flex;
+    gap: 16px;
+    
+  }
+  
+  .itemIcon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: block;
+  }
+  
+  .itemHeading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .itemDescription {
+    font-size: 1rem;
+    padding-left: 80px;
+    line-height: 1.5;
+    color: #777;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .itemsContainer {
+      flex-direction: column; /* Stack items vertically */
+    }
+  
+    .item {
+      width: 100%; /* Make items full width */
+      margin-bottom: 30px; /* Add spacing between items */
+    }
+  }

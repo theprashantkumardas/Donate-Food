@@ -1,0 +1,111 @@
+.benefitsSection {
+    padding: 100px 0;
+    text-align: left; /* Left alignment for the whole section */
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex; /* Add flex to the wrapper */
+    align-items: flex-start; /* Align to the top of the flex container */
+  }
+  
+  .introSection {
+    margin-bottom: 0; /* Remove the bottom margin */
+    width: 50%; /* Take up half the width */
+    padding-right: 30px; /* Add some spacing */
+    box-sizing: border-box;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .heading {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ffffff;
+    margin-bottom: 40px;
+    max-width: 100%; /* Take full space */
+  }
+  
+  .buttonContainer {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .benefitsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 30px;
+    width: 50%; /* Take up half the width */
+    box-sizing: border-box;
+  }
+  
+  .benefitCard {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .benefitIcon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: block;
+  }
+  
+  .benefitTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .benefitDescription {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ffffff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .wrapper {
+      flex-direction: column; /* Stack content */
+    }
+  
+    .introSection {
+      width: 100%; /* Take up full width */
+      text-align: center; /* Re-enable the text center */
+      padding-right: 0; /* Remove right padding */
+    }
+  
+    .heading {
+      font-size: 2rem;
+    }
+  
+    .description {
+      max-width: 100%; /* Full width on smaller screens */
+    }
+  
+    .buttonContainer {
+      justify-content: center; /* Center buttons on smaller screens */
+    }
+  
+    .benefitsGrid {
+      grid-template-columns: 1fr; /* Stack on smaller screens */
+      width: 100%; /* Full width on smaller screens */
+    }
+  }

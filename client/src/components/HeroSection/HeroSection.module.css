@@ -1,0 +1,66 @@
+.heroSection {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    padding: 150px 24px;
+    text-align: left; /* Align text to the left */
+    display: flex;
+    justify-content: flex-start; /* Horizontally align to the start */
+   
+    
+  }
+  
+  .wrapper {
+    max-width: 1200px; /* Limit container width */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add padding on the sides */
+    width: 100%; /* Ensure wrapper takes full width */
+  }
+  
+  .heroContent {
+    width: 100%; /* Ensure content takes full width of wrapper */
+  }
+  
+  .heroTitle {
+    font-size: 3.5rem; /* Larger title */
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+  
+  .heroDescription {
+    font-size: 1.2rem; /* Slightly larger description */
+    line-height: 1.6;
+    margin-bottom: 40px;
+  }
+  
+  .heroButtons {
+    display: flex;
+  }
+  
+  .heroButtons button {
+    margin-right: 15px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .heroSection {
+      padding: 100px 0;
+    }
+  
+    .heroTitle {
+      font-size: 2.5rem;
+    }
+  
+    .heroDescription {
+      font-size: 1rem;
+    }
+  
+    .heroButtons {
+      flex-direction: column;
+    }
+  
+    .heroButtons button {
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
+  }

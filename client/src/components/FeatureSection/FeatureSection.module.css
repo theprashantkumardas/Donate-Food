@@ -1,0 +1,68 @@
+.featureSection {
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .wrapper {
+    max-width: 1200px; /* Limit container width */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add padding on the sides */
+  }
+  
+  .sectionTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 1.2;
+  }
+  
+  .sectionDescription {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 60px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .featureCardsContainer {
+    display: flex;                /* Use flexbox */
+    justify-content: space-between;  /* Distribute cards evenly */
+    align-items: stretch;           /* Stretch cards to equal height */
+    max-width: 1200px;             /* Limit container width */
+    margin: 0 auto;                 /* Center the container */
+    padding: 0 20px;                /* Add padding on the sides */
+  }
+  
+  .buttonContainer {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .impactText {
+    font-size: 0.9rem;
+    text-align: center;
+    color: #555;
+    margin-top: 60px;
+    margin-bottom: -50px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .featureCardsContainer {
+        max-width: 760px;             
+      flex-direction: column;      /* Stack cards vertically */
+      align-items: center;           /* Center the cards */
+      padding: 0px;                    /* Remove side padding */
+    }
+  
+    .featureCard {
+      width: 99%;                  /* Make cards full width */
+      margin-bottom: 30px;           /* Add spacing between cards */
+    }
+  
+    .featureCard:last-child {
+      margin-bottom: 0;             /* Remove bottom margin on last card */
+    }
+  }

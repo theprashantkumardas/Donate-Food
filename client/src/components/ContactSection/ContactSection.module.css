@@ -1,0 +1,124 @@
+.contactSection {
+    padding: 120px 0;
+    text-align: start;
+  }
+  
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .sectionTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 1.2;
+  }
+  
+  .sectionDescription {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin-bottom: 60px;
+    line-height: 1.6;
+    color: #555;
+    
+  }
+  
+  .contactContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    text-align: left;
+    gap: 40px;
+  }
+  
+  .contactDetails {
+    flex: 1; /* Take up 50% of the space on desktop */
+    width: 50%; /* Explicitly set width to 50% */
+  }
+  
+  .contactItem {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    gap: 15px;
+  }
+  
+  .contactIcon {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 4px;
+  }
+  
+  
+  .contactText {
+    flex: 1;
+  }
+  
+  .contactLabel {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .contactText p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .contactText a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .getDirections {
+    margin-top: 10px;
+    display: inline-block;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) { /* Tablet and Mobile */
+    .contactContainer {
+      flex-direction: column; /* Stack details and form */
+      align-items: stretch;  /* Stretch items */
+      gap: 30px;              /* Reduce gap */
+    }
+  
+    .contactDetails {
+      text-align: center; /* Center align text */
+      width: 100%; /* Full width on tablet and mobile */
+    }
+  
+    .contactItem {
+      flex-direction: column; /* Stack icon and text */
+      align-items: center; /* Center align icon and text */
+      text-align: center; /* Center align text */
+    }
+  
+    .contactIcon {
+      margin-bottom: 10px; /* Add margin below icon */
+    }
+  }
+  
+  @media (max-width: 480px) { /* Mobile */
+    .sectionTitle {
+      font-size: 2rem; /* Reduce title font size */
+    }
+  
+    .sectionDescription {
+      font-size: 1rem; /* Reduce description font size */
+    }
+  
+    .contactLabel {
+      font-size: 1.1rem; /* Reduce label font size */
+    }
+  
+    .contactText p {
+      font-size: 0.9rem; /* Reduce text font size */
+    }
+  }

@@ -1,0 +1,123 @@
+.footer {
+    color: #000;
+    padding: 60px 0;
+    background: #f8f8f8;
+  }
+  
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footerLeft {
+    text-align: left;
+  }
+  
+  .footerLabel {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .socialIcons {
+    margin-top: 20px;
+  }
+  
+  .socialIconLink {
+    font-size: 1.5rem;
+    color: #000;
+    margin-right: 15px;
+    text-decoration: none;
+  }
+  
+  .footerRight {
+    text-align: right;
+    display: flex;
+  }
+  
+  .footerLinksColumn {
+    margin-left: 80px;
+  }
+  
+  .footerLinksColumnTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .footerLinks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footerLinks li {
+    margin-bottom: 10px;
+  }
+  
+  .footerLink {
+    color: #000;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .footerBottom {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding: 0 20px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .bottomLinks {
+    display: flex;
+  }
+  
+  .bottomLink {
+    color: #000;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-left: 20px;
+  }
+  
+  /* Responsive Design */
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footerContent {
+      flex-direction: column;
+      text-align: left; /* Changed to left alignment */
+    }
+  
+    .footerLeft {
+      margin-bottom: 40px;
+      text-align: left; /* Changed to left alignment */
+    }
+  
+    .footerRight {
+      text-align: left; /* Changed to left alignment */
+      flex-direction: column;
+    }
+  
+    .footerLinksColumn {
+      margin: 0 0 40px;
+    }
+  
+    .bottomLinks {
+      flex-direction: column;
+      align-items: flex-start; /* Changed to left alignment */
+    }
+  
+    .bottomLink {
+      margin: 5px 0;
+    }
+  }
