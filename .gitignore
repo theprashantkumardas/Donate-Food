@@ -93,3 +93,8 @@ client/package-lock.json
 # Exclude backend package.json
 server/package.json
 server/package-lock.json
+
+# Exclude admin package.json
+admin/package.json
+admin
+/package-lock.json
