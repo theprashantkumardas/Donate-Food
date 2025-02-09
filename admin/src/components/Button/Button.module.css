@@ -10,14 +10,14 @@
   
   .primaryButton {
     background-color: #fff; /* White background */
-    color: #0E322A; /* Black text */
-    border: #0E322A solid 1px;
+    color: #000; /* Black text */
+    border: black solid 1px;
   }
   
   .secondaryButton {
-    background-color: #0E322A; /* Transparent background */
+    background-color: #000000; /* Transparent background */
     color: #ffffff; /* White text */
-    border: #0E322A solid 1px;
+    border: white solid 1px;
   }
   
   .button:hover {

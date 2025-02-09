@@ -178,21 +178,21 @@ const AboutUs = () => {
       position: 'Restaurant Name, Restaurant Type',
       text: "Before [Your Platform Name], we were throwing away perfectly good food at the end of each day. Now, we can easily donate it to a local shelter and help feed those in need. It's a win-win!",
       rating: 5,
-      image: 'https://via.placeholder.com/50' // Replace with your image URL
+      image: 'https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' // Replace with your image URL
     },
     {
       name: 'Jane Smith',
       position: 'Position, Company Name',
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
       rating: 4,
-      image: 'https://via.placeholder.com/50' // Replace with your image URL
+      image: 'https://images.unsplash.com/photo-1457449940276-e8deed18bfff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' // Replace with your image URL
     },
     {
       name: 'Mike Johnson',
       position: 'Position, Company Name',
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
       rating: 5,
-      image: 'https://via.placeholder.com/50' // Replace with your image URL
+      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' // Replace with your image URL
     },
   ];
 

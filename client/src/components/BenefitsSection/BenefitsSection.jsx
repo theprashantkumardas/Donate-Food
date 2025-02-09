@@ -12,9 +12,9 @@ const BenefitsSection = ({ tagline, heading, description, benefits, button1Text,
           <h2 className={styles.heading}>{heading}</h2>
           <p className={styles.description}>{description}</p>
           <div className={styles.buttonContainer}>
-            {button1Text && <Button styleType="secondary">{button1Text}</Button>}
+            {button1Text && <Button styleType="primary">{button1Text}</Button>}
             {button2Text && (
-              <Button styleType="primary">
+              <Button styleType="secondary">
                 {button2Text} <FaArrowRight />
               </Button>
             )}

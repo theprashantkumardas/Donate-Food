@@ -1,0 +1,146 @@
+.manageUsersPage {
+    padding: 20px;
+  }
+  
+  .headingSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .description {
+    color: #555;
+  }
+  
+  .headerButtons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .usersTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+  }
+  
+  .usersTable th,
+  .usersTable td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .usersTable th {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .userCell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .userImageContainer {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .userImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .userName {
+    font-weight: bold;
+  }
+  
+  .userEmail {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .viewLink {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .pageNumbers {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .pageNumbers span {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .headingSection {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .headerButtons {
+      margin-top: 20px;
+    }
+  
+    .usersTable {
+      overflow-x: auto; /* Enable horizontal scrolling */
+      display: block;
+    }
+  
+    .usersTable thead {
+      display: none; /* Hide the header */
+    }
+  
+    .usersTable tr {
+      display: block;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+    }
+  
+    .usersTable td {
+      display: block;
+      text-align: left;
+      padding-left: 15px;
+      position: relative;
+      border: none;
+    }
+  
+    .usersTable td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 15px;
+      font-weight: bold;
+      text-align: left;
+    }
+  
+    .mainContent,
+    .secondaryContent {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  

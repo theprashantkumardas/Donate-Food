@@ -1,66 +1,95 @@
 .heroSection {
-    background-color: #000; /* Black background */
-    color: #fff; /* White text color */
-    padding: 150px 24px;
-    text-align: left; /* Align text to the left */
-    display: flex;
-    justify-content: flex-start; /* Horizontally align to the start */
-   
-    
+  position: relative; /*  Keep position relative */
+  overflow: hidden;
+  min-height: 100vh; /* Minimum height of 100% of viewport height */
+  display: flex;  /* Make it a flex container */
+  flex-direction: column;  /* Stack the content vertically */
+  justify-content: center; /* Vertically center the content */
+  align-items: flex-start; /* Align content horizontally to the start (left) */
+  padding: 20px;
+}
+
+.heroSection::before { /* Overlay remains unchanged */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.heroVideo {
+  position: absolute; /* Absolute positioning to cover the section */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Ensure video covers the whole area */
+  z-index: 0; /*  Video behind the content and overlay */
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  position: relative;
+  z-index: 2; /* Keep above overlay and video */
+}
+
+.heroContent { /*  Remaining styles unchanged or adjusted */
+  width: 100%;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  color: #CDE0DC;
+}
+
+.heroDescription {
+  color: #CDE0DC;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.heroButtons {
+  display: flex;
+}
+
+.heroButtons button {
+  margin-right: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 100px auto;
+    align-items: center;
   }
-  
-  .wrapper {
-    max-width: 1200px; /* Limit container width */
-    margin: 0 auto; /* Center the container */
-    padding: 0 20px; /* Add padding on the sides */
-    width: 100%; /* Ensure wrapper takes full width */
-  }
-  
-  .heroContent {
-    width: 100%; /* Ensure content takes full width of wrapper */
-  }
-  
+
   .heroTitle {
-    font-size: 3.5rem; /* Larger title */
-    font-weight: bold;
-    margin-bottom: 20px;
-    line-height: 1.2;
+    font-size: 2.5rem;
+    margin-top: -100px;
   }
-  
+
   .heroDescription {
-    font-size: 1.2rem; /* Slightly larger description */
-    line-height: 1.6;
-    margin-bottom: 40px;
+    font-size: 1rem;
+
   }
-  
+
   .heroButtons {
-    display: flex;
+    flex-direction: column;
+    margin-right: 24px;
   }
-  
+
   .heroButtons button {
-    margin-right: 15px;
+    margin-bottom: 10px;
+    margin-right: 0;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .heroSection {
-      padding: 100px 0;
-    }
-  
-    .heroTitle {
-      font-size: 2.5rem;
-    }
-  
-    .heroDescription {
-      font-size: 1rem;
-    }
-  
-    .heroButtons {
-      flex-direction: column;
-    }
-  
-    .heroButtons button {
-      margin-bottom: 10px;
-      margin-right: 0;
-    }
-  }
+}

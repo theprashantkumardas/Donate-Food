@@ -5,36 +5,50 @@ import FAQItem from '../FAQItem/FAQItem';
 const FAQSection = () => {
   const faqs = [
     {
-      question: 'Is donated food safe to eat?',
+      question: 'What types of food can I donate?',
       answer:
-        'Yes, donated food is safe to eat as long as it meets food safety standards. Donators are encouraged to follow food safety guidelines and ensure that the donated food is still within its expiration date and properly stored.',
+        'We accept a wide range of food items, including perishable and non-perishable goods.  This could be anything from unsold prepared meals, surplus produce, canned goods, to bakery items.  Food must be within its expiration date, properly stored, and in good condition.  Please check our guidelines for a detailed list of acceptable items.',
     },
     {
-      question: 'How do I donate?',
+      question: 'What happens to the donated food?',
       answer:
-        'To donate, sign up on our platform. You can specify the type and quantity of food you want to donate. Our system will help you schedule a pick-up.',
+        'Donated food is carefully inspected to meet safety standards and then distributed to our partner network of local charities.  These charities provide meals and food assistance to individuals and families facing food insecurity in our community.  We prioritize getting the food to where it is needed most quickly and efficiently.',
     },
     {
-      question: 'Is donated food safe to eat?',
+      question: 'How do I schedule a food donation pickup?',
       answer:
-        'Yes, donated food is safe to eat as long as it meets food safety standards. Donators are encouraged to follow food safety guidelines and ensure that the donated food is still within its expiration date and properly stored.',
+        'Scheduling a pickup is easy!  After creating an account on our platform, you can access the "Donate Food" section to list the available items and preferred pickup times.  Our system will then match you with a local charity, and we ll coordinate the logistics.',
     },
     {
-      question: 'How do I donate?',
+      question: 'What if a charity cant accept my donation?',
       answer:
-        'To donate, sign up on our platform. You can specify the type and quantity of food you want to donate. Our system will help you schedule a pick-up.',
+        'If the initially matched charity is unable to accept your donation due to capacity constraints or specific needs, our system will automatically search for alternative partners in your area.  We ll keep you informed throughout the process to ensure your donation finds a good home.',
     },
     {
-      question: 'Is donated food safe to eat?',
+      question: 'What food safety guidelines should I follow when donating?',
       answer:
-        'Yes, donated food is safe to eat as long as it meets food safety standards. Donators are encouraged to follow food safety guidelines and ensure that the donated food is still within its expiration date and properly stored.',
+        'Food safety is our top priority! Please ensure that all food is handled, stored, and transported according to safe food handling practices. Refrigerate perishable items promptly, label food clearly, and avoid donating food that shows signs of spoilage. We recommend following guidelines from your local health department.',
     },
     {
-      question: 'How do I donate?',
+      question: 'Is my donation tax-deductible?',
       answer:
-        'To donate, sign up on our platform. You can specify the type and quantity of food you want to donate. Our system will help you schedule a pick-up.',
+        'In many cases, food donations are eligible for tax deductions.  We recommend consulting with your tax advisor to determine the specific benefits available to you.  We can provide documentation for your donations upon request.',
     },
-    // Add more FAQs here
+    {
+      question: 'Can I request a specific charity to receive my donation?',
+      answer:
+        'While our system aims to match donations with the most appropriate nearby charity, we understand you may have a preference.  You can indicate preferred charities in your profile, and we ll do our best to accommodate your request, availability permitting.',
+    },
+    {
+      question: 'What areas do you serve?',
+      answer:
+        'We currently serve [List of Cities/Regions] but are rapidly expanding! Check back often to see if weve launched in your area.  If youre outside our current service area but interested in donating or partnering, please contact us – we d love to explore future opportunities.',
+    },
+    {
+      question: 'What measures are in place to ensure food safety during transport?',
+      answer:
+        'We have strict protocols for food safety during transport. All drivers and volunteers are trained in safe food handling practices. We have a collaboration between partner business in logistics industry in our area. Perishable items are transported in refrigerated vehicles to ensure they remain at safe temperatures during transit.',
+    },
   ];
 
   return (

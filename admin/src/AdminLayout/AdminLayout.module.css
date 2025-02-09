@@ -1,0 +1,211 @@
+/* Admin Layout Styles */
+.adminLayout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  left: -250px;
+  top: 0;
+  height: 100vh;
+  transition: left 0.3s ease-in-out;
+}
+
+.sidebarOpen {
+  left: 0;
+}
+
+.sidebarClosed {
+  left: -250px;
+}
+
+/* Sidebar Header */
+.sidebarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.closeButton {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Navigation Links */
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 15px;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  gap: 10px;
+}
+
+.navLink:hover {
+  background-color: #ddd;
+}
+
+.activeLink {
+  background-color: #e7e7e7;
+  color: #000;
+}
+
+/* Notification Badge */
+.notification {
+  background-color: #4CAF50;
+  color: white;
+  padding: 3px 7px;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  margin-left: 5px;
+}
+
+/* Dropdown Menu */
+.dropdownContent {
+  display: none;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+/* Footer Links */
+.footerLinks {
+  margin-top: auto;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+/* Main Content */
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 300px;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.sidebarClosed + .content {
+  margin-left: 50px;
+}
+
+/* Header */
+.header {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Search Box */
+.searchBox {
+  flex-grow: 1;
+  margin-right: 20px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* User Actions */
+.userActions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Page Content */
+.pageContent {
+  flex-grow: 1;
+  display: flex;
+  padding: 20px;
+}
+
+.mainContent {
+  flex: 2;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.secondaryContent {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .adminLayout {
+    flex-direction: column;
+  }
+
+  /* Hamburger Icon */
+  .hamburgerIcon {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 101; /* Above the sidebar */
+  }
+
+  /* Sidebar Responsive */
+  .sidebar {
+    width: 100%;
+    height: 100vh;
+    left: -100%;
+  }
+
+  .sidebarOpen {
+    left: 0;
+  }
+
+  .sidebarClosed {
+    left: -100%;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
+  .pageContent {
+    flex-direction: column;
+  }
+
+  .mainContent,
+  .secondaryContent {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

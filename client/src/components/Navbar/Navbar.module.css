@@ -1,5 +1,6 @@
 .navbar {
-    background-color: #f8f8f8;
+    background-color: #CDE0DC;
+    color: #0E322A;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -30,7 +31,7 @@
   
   .navLink {
     text-decoration: none;
-    color: #333;
+    color: #0E322A;
     font-weight: bold;
   }
   
